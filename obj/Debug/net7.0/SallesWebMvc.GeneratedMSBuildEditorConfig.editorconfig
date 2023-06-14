@@ -9,61 +9,61 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = SallesWebMvc
 build_property.RootNamespace = SallesWebMvc
-build_property.ProjectDir = C:\Users\erickson.dourado\Documents\Treino\C#\c#completo_orientado_obj\cap18_Mvc\SallesWebMvc\
+build_property.ProjectDir = D:\C#\workShop_AspNet_Mvc\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\erickson.dourado\Documents\Treino\C#\c#completo_orientado_obj\cap18_Mvc\SallesWebMvc
+build_property.MSBuildProjectDirectory = D:\C#\workShop_AspNet_Mvc
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/erickson.dourado/Documents/Treino/C\#/c\#completo_orientado_obj/cap18_Mvc/SallesWebMvc/Views/Departments/Create.cshtml]
+[D:/C\#/workShop_AspNet_Mvc/Views/Departments/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0bWVudHNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/erickson.dourado/Documents/Treino/C\#/c\#completo_orientado_obj/cap18_Mvc/SallesWebMvc/Views/Departments/Delete.cshtml]
+[D:/C\#/workShop_AspNet_Mvc/Views/Departments/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0bWVudHNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/erickson.dourado/Documents/Treino/C\#/c\#completo_orientado_obj/cap18_Mvc/SallesWebMvc/Views/Departments/Details.cshtml]
+[D:/C\#/workShop_AspNet_Mvc/Views/Departments/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0bWVudHNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/erickson.dourado/Documents/Treino/C\#/c\#completo_orientado_obj/cap18_Mvc/SallesWebMvc/Views/Departments/Edit.cshtml]
+[D:/C\#/workShop_AspNet_Mvc/Views/Departments/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0bWVudHNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/erickson.dourado/Documents/Treino/C\#/c\#completo_orientado_obj/cap18_Mvc/SallesWebMvc/Views/Departments/Index.cshtml]
+[D:/C\#/workShop_AspNet_Mvc/Views/Departments/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0bWVudHNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/erickson.dourado/Documents/Treino/C\#/c\#completo_orientado_obj/cap18_Mvc/SallesWebMvc/Views/Home/About.cshtml]
+[D:/C\#/workShop_AspNet_Mvc/Views/Home/About.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBYm91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/erickson.dourado/Documents/Treino/C\#/c\#completo_orientado_obj/cap18_Mvc/SallesWebMvc/Views/Home/Index.cshtml]
+[D:/C\#/workShop_AspNet_Mvc/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/erickson.dourado/Documents/Treino/C\#/c\#completo_orientado_obj/cap18_Mvc/SallesWebMvc/Views/Home/Privacy.cshtml]
+[D:/C\#/workShop_AspNet_Mvc/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/erickson.dourado/Documents/Treino/C\#/c\#completo_orientado_obj/cap18_Mvc/SallesWebMvc/Views/Shared/Error.cshtml]
+[D:/C\#/workShop_AspNet_Mvc/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/erickson.dourado/Documents/Treino/C\#/c\#completo_orientado_obj/cap18_Mvc/SallesWebMvc/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/C\#/workShop_AspNet_Mvc/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/erickson.dourado/Documents/Treino/C\#/c\#completo_orientado_obj/cap18_Mvc/SallesWebMvc/Views/_ViewImports.cshtml]
+[D:/C\#/workShop_AspNet_Mvc/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/erickson.dourado/Documents/Treino/C\#/c\#completo_orientado_obj/cap18_Mvc/SallesWebMvc/Views/_ViewStart.cshtml]
+[D:/C\#/workShop_AspNet_Mvc/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/erickson.dourado/Documents/Treino/C\#/c\#completo_orientado_obj/cap18_Mvc/SallesWebMvc/Views/Shared/_Layout.cshtml]
+[D:/C\#/workShop_AspNet_Mvc/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-0hr7excqwv

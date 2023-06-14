@@ -10609,31 +10609,32 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\erickson.dourado\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\ComponentOne\\WinForms Edition\\bin\\v6\\": {}
+    "C:\\Users\\erick\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\erickson.dourado\\Documents\\Treino\\C#\\c#completo_orientado_obj\\cap18_Mvc\\SallesWebMvc\\SallesWebMvc.csproj",
+      "projectUniqueName": "D:\\C#\\workShop_AspNet_Mvc\\SallesWebMvc.csproj",
       "projectName": "SallesWebMvc",
-      "projectPath": "C:\\Users\\erickson.dourado\\Documents\\Treino\\C#\\c#completo_orientado_obj\\cap18_Mvc\\SallesWebMvc\\SallesWebMvc.csproj",
-      "packagesPath": "C:\\Users\\erickson.dourado\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\erickson.dourado\\Documents\\Treino\\C#\\c#completo_orientado_obj\\cap18_Mvc\\SallesWebMvc\\obj\\",
+      "projectPath": "D:\\C#\\workShop_AspNet_Mvc\\SallesWebMvc.csproj",
+      "packagesPath": "C:\\Users\\erick\\.nuget\\packages\\",
+      "outputPath": "D:\\C#\\workShop_AspNet_Mvc\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\ComponentOne\\WinForms Edition\\bin\\v6\\"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\erickson.dourado\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\ComponentOne.config",
+        "C:\\Users\\erick\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\ComponentOne\\Packages": {},
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
@@ -10687,7 +10688,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }
