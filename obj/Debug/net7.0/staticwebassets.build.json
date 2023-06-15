@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "cr6odsqRsT9urxBo5gY+M7SF9h7jN4YlSQlTgmxo+50=",
+  "Hash": "rIeekAn1o+hKXViEm0AKeEKd6P0pLAWjMXodQSzpT4M=",
   "Source": "SallesWebMvc",
   "BasePath": "_content/SallesWebMvc",
   "Mode": "Default",
@@ -253,6 +253,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Identity": "D:\\C#\\workShop_AspNet_Mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-flatly.css",
+      "SourceId": "SallesWebMvc",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\C#\\workShop_AspNet_Mvc\\wwwroot\\",
+      "BasePath": "_content/SallesWebMvc",
+      "RelativePath": "lib/bootstrap/dist/css/bootstrap-flatly.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-flatly.css"
     },
     {
       "Identity": "D:\\C#\\workShop_AspNet_Mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
