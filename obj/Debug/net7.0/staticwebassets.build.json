@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "bliQDxKDjy196iNA//Z4d55gKVDFfwPG2xzi0ZQtlrE=",
+  "Hash": "cr6odsqRsT9urxBo5gY+M7SF9h7jN4YlSQlTgmxo+50=",
   "Source": "SallesWebMvc",
   "BasePath": "_content/SallesWebMvc",
   "Mode": "Default",
@@ -168,6 +168,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Identity": "D:\\C#\\workShop_AspNet_Mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min-darkly.css",
+      "SourceId": "SallesWebMvc",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\C#\\workShop_AspNet_Mvc\\wwwroot\\",
+      "BasePath": "_content/SallesWebMvc",
+      "RelativePath": "lib/bootstrap/dist/css/bootstrap.min-darkly.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min-darkly.css"
     },
     {
       "Identity": "D:\\C#\\workShop_AspNet_Mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
@@ -372,6 +389,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Identity": "D:\\C#\\workShop_AspNet_Mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-lumen.css",
+      "SourceId": "SallesWebMvc",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\C#\\workShop_AspNet_Mvc\\wwwroot\\",
+      "BasePath": "_content/SallesWebMvc",
+      "RelativePath": "lib/bootstrap/dist/css/bootstrap-lumen.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-lumen.css"
     },
     {
       "Identity": "D:\\C#\\workShop_AspNet_Mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",

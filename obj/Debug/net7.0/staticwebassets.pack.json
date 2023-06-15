@@ -53,6 +53,10 @@
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
+      "Id": "D:\\C#\\workShop_AspNet_Mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-lumen.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-lumen.css"
+    },
+    {
       "Id": "D:\\C#\\workShop_AspNet_Mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
@@ -123,6 +127,10 @@
     {
       "Id": "D:\\C#\\workShop_AspNet_Mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\C#\\workShop_AspNet_Mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min-darkly.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min-darkly.css"
     },
     {
       "Id": "D:\\C#\\workShop_AspNet_Mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
