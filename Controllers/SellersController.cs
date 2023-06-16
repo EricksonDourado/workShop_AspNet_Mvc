@@ -1,10 +1,12 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.TagHelpers;
 using Microsoft.CodeAnalysis.VisualBasic;
 using Microsoft.EntityFrameworkCore;
 using SallesWebMvc.Data;
 using SallesWebMvc.Models;
 using SallesWebMvc.Models.ViewModels;
 using SallesWebMvc.Services;
+using SallesWebMvc.Services.Exceptions;
 
 namespace SallesWebMvc.Controllers
 {
@@ -81,7 +83,46 @@ namespace SallesWebMvc.Controllers
                 return NotFound();
             }
             return View(obj);
+        }
 
+        [HttpGet]
+        public IActionResult Edit(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+            var obj = _sellerService.FindById(id.Value);
+            if (obj == null)
+            {
+                return NotFound();
+            }
+            var departament = _departmentService.FindAll();
+            SellerFormViewModel viewModel = new SellerFormViewModel { Departments = departament , Seller = obj};
+            return View(viewModel);
+        }
+
+        [HttpPost]
+        [AutoValidateAntiforgeryToken]
+        public IActionResult Edit(int id, Seller seller)
+        {
+            if( id != seller.Id) 
+            { 
+                return NotFound();
+            }
+            try
+            {
+                _sellerService.Update(seller);
+                return RedirectToAction(nameof(Index));
+            }
+            catch (DbUpdateConcurrencyException e)
+            {
+                throw new DbUpdateConcurrencyException(e.Message);
+            }
+            catch(NotFoundException e)
+            {
+                throw new NotFoundException(e.Message);
+            }
         }
     }
 }
