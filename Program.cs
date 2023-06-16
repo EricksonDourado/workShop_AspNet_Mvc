@@ -8,6 +8,7 @@ builder.Services.AddDbContext<SallesWebMvcContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("SallesWebMvcContext") ?? throw new InvalidOperationException("Connection string 'SallesWebMvcContext' not found.")));
 
 builder.Services.AddScoped<SellerService>();
+builder.Services.AddScoped<DepartmentService>();
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
