@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Azure.Core;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.TagHelpers;
 using Microsoft.CodeAnalysis.VisualBasic;
 using Microsoft.EntityFrameworkCore;
@@ -7,6 +8,7 @@ using SallesWebMvc.Models;
 using SallesWebMvc.Models.ViewModels;
 using SallesWebMvc.Services;
 using SallesWebMvc.Services.Exceptions;
+using System.Diagnostics;
 
 namespace SallesWebMvc.Controllers
 {
@@ -75,12 +77,12 @@ namespace SallesWebMvc.Controllers
         {
             if (id == null)
             {
-                return NotFound();
+                return RedirectToAction(nameof(Error), new { message = "Not Found" });
             }
             var obj = _sellerService.FindById(id.Value);
             if (obj == null)
             {
-                return NotFound();
+                return RedirectToAction(nameof(Error), new { message = "Not Found" });
             }
             return View(obj);
         }
@@ -90,12 +92,12 @@ namespace SallesWebMvc.Controllers
         {
             if (id == null)
             {
-                return NotFound();
+                return RedirectToAction(nameof(Error), new { message = "Id not found." });
             }
             var obj = _sellerService.FindById(id.Value);
             if (obj == null)
             {
-                return NotFound();
+                return RedirectToAction(nameof(Error),new { message = "Not Found" });
             }
             var departament = _departmentService.FindAll();
             SellerFormViewModel viewModel = new SellerFormViewModel { Departments = departament , Seller = obj};
@@ -107,8 +109,8 @@ namespace SallesWebMvc.Controllers
         public IActionResult Edit(int id, Seller seller)
         {
             if( id != seller.Id) 
-            { 
-                return NotFound();
+            {
+                return RedirectToAction(nameof(Error), new { message = "Ids do not match" });
             }
             try
             {
@@ -117,12 +119,18 @@ namespace SallesWebMvc.Controllers
             }
             catch (DbUpdateConcurrencyException e)
             {
-                throw new DbUpdateConcurrencyException(e.Message);
+                return RedirectToAction(nameof(Error), new { message = e.Message });
             }
-            catch(NotFoundException e)
+        }
+
+        public IActionResult Error (string message)
+        {
+            var error = new ErrorViewModel
             {
-                throw new NotFoundException(e.Message);
-            }
+                Message = message,
+                RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier
+            };
+            return View(error);
         }
     }
 }
