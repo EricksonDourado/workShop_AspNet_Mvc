@@ -1,7 +1,9 @@
+using Microsoft.AspNetCore.Localization;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using SallesWebMvc.Data;
 using SallesWebMvc.Services;
+using System.Globalization;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<SallesWebMvcContext>(options =>
@@ -13,6 +15,16 @@ builder.Services.AddScoped<DepartmentService>();
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
+
+var enUS = new CultureInfo("en-US");
+var localizationOptions = new RequestLocalizationOptions
+{
+    DefaultRequestCulture = new RequestCulture(enUS),
+    SupportedCultures = new List<CultureInfo> { enUS },
+    SupportedUICultures = new List<CultureInfo> { enUS }
+};
+
+app.UseRequestLocalization(localizationOptions);
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
