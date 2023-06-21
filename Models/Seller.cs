@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.AspNetCore.Mvc.ModelBinding;
+using System.ComponentModel.DataAnnotations;
 
 namespace SallesWebMvc.Models
 {
@@ -24,8 +25,10 @@ namespace SallesWebMvc.Models
         [Required(ErrorMessage = "{0} required")]
         [Range(100.0, 50000.0, ErrorMessage = "{0} must be from {1} to {2}")]
         [Display(Name = "Base Salary")]
-        [DisplayFormat(DataFormatString ="{0:F2}")]
+        [DisplayFormat(DataFormatString = "{0:F2}")]
         public double BaseSalary { get; set; }
+
+        [BindNever]
         public Department Department { get; set; }
         public int DepartmentId { get; set; }    
         public ICollection<SalesRecord> SalesRecords { get; set; } = new List<SalesRecord>();

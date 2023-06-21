@@ -1,5 +1,7 @@
-﻿using SallesWebMvc.Data;
+﻿using Microsoft.EntityFrameworkCore;
+using SallesWebMvc.Data;
 using SallesWebMvc.Models;
+using System.Linq;
 
 namespace SallesWebMvc.Services
 {
@@ -12,9 +14,15 @@ namespace SallesWebMvc.Services
             _context = context;
         }
 
-        public List<Department> FindAll()
+        public async Task<List<Department>> FindAllAsync()
         {
-            return _context.Department.OrderBy(s => s.Name).ToList();
+            return await _context.Department.OrderBy(s => s.Name).ToListAsync();
+        }
+        public Department GetByIdAsync(int id)
+        {
+            var ids = id;
+            var department = _context.Department.Where(d => d.Id == ids).FirstOrDefault();
+            return department;
         }
     }
 }
