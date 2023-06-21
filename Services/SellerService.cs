@@ -16,7 +16,7 @@ namespace SallesWebMvc.Services
 
         public async Task<List<Seller>> FindAllAsync()
         {
-            return  await _context.Seller.ToListAsync();
+            return await _context.Seller.ToListAsync();
         }
 
         public async Task InsertAsync(Seller seller)
@@ -32,15 +32,22 @@ namespace SallesWebMvc.Services
 
         public async Task DeleteAsync(int id)
         {
-            Seller obj = _context.Seller.Find(id);
-            _context.Seller.Remove(obj);
-            await _context.SaveChangesAsync();
+            try
+            {
+                Seller obj = _context.Seller.Find(id);
+                _context.Seller.Remove(obj);
+                await _context.SaveChangesAsync();
+            }
+            catch (DbUpdateException e)
+            {
+                throw new IntegrityException(e.Message);
+            }
         }
 
         public async Task UpdateAsync(Seller obj)
         {
             bool isSeller = await _context.Seller.AnyAsync(x => x.Id == obj.Id);
-            if (!isSeller )
+            if (!isSeller)
             {
                 throw new NotFoundException("Id not found");
             }

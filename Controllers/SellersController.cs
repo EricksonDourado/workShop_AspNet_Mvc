@@ -9,12 +9,13 @@ using SallesWebMvc.Services;
 using System.Diagnostics;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
+using SallesWebMvc.Services.Exceptions;
 
 namespace SallesWebMvc.Controllers
 {
     public class SellersController : Controller
     {
-       
+
         private readonly SellerService _sellerService;
         private readonly DepartmentService _departmentService;
 
@@ -35,7 +36,7 @@ namespace SallesWebMvc.Controllers
         [HttpGet]
         public async Task<IActionResult> Create()
         {
-            var departments =  await _departmentService.FindAllAsync();
+            var departments = await _departmentService.FindAllAsync();
             var viewModel = new SellerFormViewModel { Departments = departments };
             return View(viewModel);
         }
@@ -59,12 +60,12 @@ namespace SallesWebMvc.Controllers
         [HttpGet]
         public async Task<IActionResult> Delete(int? id)
         {
-            if(id == null)
+            if (id == null)
             {
                 return NotFound();
             }
             var obj = await _sellerService.FindByIdAsync(id.Value);
-            if(obj == null)
+            if (obj == null)
             {
                 return NotFound();
             }
@@ -75,8 +76,15 @@ namespace SallesWebMvc.Controllers
         [AutoValidateAntiforgeryToken]
         public async Task<IActionResult> Delete(int id)
         {
-            await _sellerService.DeleteAsync(id);
-            return RedirectToAction("Index");
+            try
+            {
+                await _sellerService.DeleteAsync(id);
+                return RedirectToAction("Index");
+            }
+            catch (IntegrityException e)
+            {
+                return RedirectToAction(nameof(Error), new { message = e.Message });
+            }
         }
 
         [HttpGet]
@@ -104,10 +112,10 @@ namespace SallesWebMvc.Controllers
             var obj = await _sellerService.FindByIdAsync(id.Value);
             if (obj == null)
             {
-                return RedirectToAction(nameof(Error),new { message = "Not Found" });
+                return RedirectToAction(nameof(Error), new { message = "Not Found" });
             }
             var departament = await _departmentService.FindAllAsync();
-            SellerFormViewModel viewModel = new SellerFormViewModel { Departments = departament , Seller = obj};
+            SellerFormViewModel viewModel = new SellerFormViewModel { Departments = departament, Seller = obj };
             return View(viewModel);
         }
 
@@ -122,7 +130,7 @@ namespace SallesWebMvc.Controllers
                 var viewModel = new SellerFormViewModel { Seller = seller, Departments = departments };
                 return View(viewModel);
             }
-            if ( id != seller.Id) 
+            if (id != seller.Id)
             {
                 return RedirectToAction(nameof(Error), new { message = "Ids do not match" });
             }
@@ -137,7 +145,7 @@ namespace SallesWebMvc.Controllers
             }
         }
 
-        public IActionResult Error (string message)
+        public IActionResult Error(string message)
         {
             var error = new ErrorViewModel
             {
